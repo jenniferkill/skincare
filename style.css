@@ -1,0 +1,71 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    font-family: 'Neucha';
+    color: blueviolet;
+}
+h1{
+    font-family: 'neucha';
+    color: coral;
+}
+h2{
+    font-family: 'neucha';
+    color: rgb(248, 79, 73);
+}
+h3{
+    color: coral;
+    font-family: 'neucha';
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+tr{
+    background-color: rgb(212, 197, 193);
+    font-family: 'neucha';
+}
+a{
+    color: blueviolet;
+    text-decoration: none;
+}
+a:hover{
+    color: blueviolet;
+    text-decoration: underline;
+}
+/* formulario*/
+
+.formContacto{
+    width: 300px;
+    background-color: rgb(241, 129, 121);
+    padding: 50px;
+    margin: auto;
+    border-radius: 30px;
+    font-family: 'Neucha';
+
+}
+.titulo{
+    font-family: 'Neucha';
+    margin-bottom: 60px;
+}
+.ingreso{
+    width: 100%;
+    background-color: rgb(241, 129, 121);
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    font-family: 'Neucha';
+
+}
+.formContacto .boton{
+    width: 50%;
+    background-color: rgb(197, 74, 74);
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
