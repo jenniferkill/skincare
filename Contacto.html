@@ -11,47 +11,61 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1>Skincare</h1>
-    </header>
-    <nav>
+    <nav class="menu">
         <a href="index.html"><img src="imagenes/logo.svg" alt="Skincare"></a>
-        <ul>
-            <a href="cuidadodiario.html"><li>cuidado de la piel</li></a>
-            <a href="afecciones.html"><li>afecciones</li></a>
-            <a href="productos.html"><li>productos</li></a>
-            <a href="protocolos.html"><li>protocolos</li></a>
+        <ul class="navigation">       
+            <li class="navigationOptions">
+                <a href="cuidadodiario.html">Cuidado Diario</a>
+            </li>
+            <li class="navigationOptions">
+                <a href="afecciones.html">afecciones</a>
+            </li>
+            <li class="navigationOptions">
+                <a href="productos.html">productos</a>
+            </li>
+            <li class="navigationOptions">
+                <a href="protocolos.html">protocolos</a>
+            </li>
+            <li class="navigationOptions">
+                <a href="Contacto.html">Contacto</a>
+            </li>
         </ul>
     </nav>
-    <main>
-        <form action="" class="formContacto">
-            <label class="titulo" for="Name">Nombre:</label><br>
-            <input class="ingreso" type="text" name="name" placeholder="Tu nombre"><br>
-            <label class="titulo" for="Email">Email:</label><br>
-            <input class="ingreso" type="email" name="Email" placeholder="a@a.com"><br>
-            <label  class="titulo" for="fname">Que tipo de piel tienes </label><br>
-            <select class="ingreso" name="Tipo de piel" >
-                <option value="Grasa">Grasa</option>
-                <option value="Seca">Seca</option>
-                <option value="Mixta">Mixta</option>
-            </select><br>
-            <label for="observacion" class="titulo">Preguntas:</label><br>
-            <input class="ingreso" type="textarea" name="observacion" placeholder="Escribe aqui la pregunta especifica"">
-            <input  class="boton" type="reset" value="Enviar">
-            
-        </form>  
-    </main>
-    <aside>
-        <ul>
-            <li>Acne</li>
-            <li>Rosacea</li>
-            <li>Manchas</li>
-            <li>Control de Edad</li>
-        </ul>
-    </aside>
-    <footer>
-        <img src="imagenes/insta.png" alt="Instagram">
-        <img src="imagenes/Facebook.png" alt="Facebook">
+    <div class="Contenido">
+        <aside class="Menu_externo">
+            <ul>
+                <li>Acne</li>
+                <li>Rosacea</li>
+                <li>Manchas</li>
+                <li>Control de edad</li>
+            </ul> 
+        </aside>
+        <main class="Principal">
+            <form action="" class="formContacto">
+                <label class="titulo" for="Name">Nombre:</label><br>
+                <input class="ingreso" type="text" name="name" placeholder="Tu nombre"><br>
+                <label class="titulo" for="Email">Email:</label><br>
+                <input class="ingreso" type="email" name="Email" placeholder="a@a.com"><br>
+                <label  class="titulo" for="fname">Que tipo de piel tienes </label><br>
+                <select class="ingreso" name="Tipo de piel" >
+                    <option value="Grasa">Grasa</option>
+                    <option value="Seca">Seca</option>
+                    <option value="Mixta">Mixta</option>
+                </select><br>
+                <label for="observacion" class="titulo">Preguntas:</label><br>
+                <input class="ingreso" type="textarea" name="observacion" placeholder="Escribe aqui la pregunta especifica"">
+                <input  class="boton" type="reset" value="Enviar">
+                
+            </form>  
+        </main>
+    </div>
+    <footer class="final">
+        <div>
+            <img src="imagenes/insta.png" alt="Instagram" >
+            <img src="imagenes/Facebook.png" alt="Facebook" > 
+        </div>
+        <br>
+        <p>Hecho en el 2021</p>
     </footer>
 </body>
 </html>   

@@ -4,68 +4,158 @@
     padding: 0;
     box-sizing: border-box;
 }
-p{
+body{
+    background-color:#DA70D6 ;
+}
+/* Menu */
+.Cabecera h1{
+   color: #4E1A3D;
+   font-family: 'Neucha';
+   font-size: 18px;
+   text-align: center;
+   width: 100%;
+
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu img{
+    width: 100%;
+    border: rgb(37, 12, 44) solid 2px;
+    margin: 5px;
+}
+.menu a{
+    width: 20%;
+}
+.navigation{
+    display: flex;
+    list-style: none;
     font-family: 'Neucha';
-    color: blueviolet;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
 }
-h1{
-    font-family: 'neucha';
-    color: coral;
+.navigationOptions{
+    float: right;
+    flex-direction: row;
+    width: 120px;
 }
-h2{
-    font-family: 'neucha';
-    color: rgb(248, 79, 73);
-}
-h3{
-    color: coral;
-    font-family: 'neucha';
-}
-img{
-    width: 100px;
-    height: 100px;
-}
-tr{
-    background-color: rgb(212, 197, 193);
-    font-family: 'neucha';
-}
-a{
-    color: blueviolet;
+.navigation a:link, a:visited, a:active{
     text-decoration: none;
+    color: #4E1A3D;
 }
-a:hover{
-    color: blueviolet;
-    text-decoration: underline;
+/*main*/
+
+.Contenido{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    font-family: 'Neucha';
 }
+
+/* menu posible*/
+
+.Menu_externo{
+    background-color: #DA70D6;
+    font-family: 'Neucha';
+    font-weight: bold;
+    font-size: 20px;
+    width: 20%;
+    list-style: none;
+}
+.Menu_externo ul{
+    margin: 10px;
+    list-style: none;
+    
+}
+.Menu_externo li{
+    border: #4E1A3D solid 2px;
+    margin: 10px;
+    padding: 5px;
+}
+
+/* contenido*/
+.Principal{
+    background-color: #DA70D6;
+    width: 80%;
+}
+
+.Principal_text{
+    font-family: 'Neucha';
+    font-size: 20px;
+    padding: 25px;
+    color: #4E1A3D;
+}
+/*table*/
+.Principal table{
+    font-family: 'Neucha';
+    font-size: 16px;
+    color: #4E1A3D;
+}
+.Principal td{
+    border: #4E1A3D  solid 2px;
+}
+.Principal img{
+    width: 180px;
+    text-align: center;
+    padding: 15px;
+}
+.Principal h2{
+    font-family: 'Neucha';
+    font-size: 30px;
+    text-align: center;
+    color: #4E1A3D;;
+}
+
 /* formulario*/
 
 .formContacto{
     width: 300px;
-    background-color: rgb(241, 129, 121);
+    background-image: url("imagenes/fondo.svg");
+    background-size: contain;
     padding: 50px;
     margin: auto;
     border-radius: 30px;
     font-family: 'Neucha';
-
+    color: #4B0082;
+    font-weight: bold;
 }
-.titulo{
-    font-family: 'Neucha';
-    margin-bottom: 60px;
+.formContacto .titulo{
+    color: #4B0082;
+    background-color: wheat;
 }
 .ingreso{
     width: 100%;
-    background-color: rgb(241, 129, 121);
+    background-color: rgb(148, 78, 212);
     padding: 5px;
     border-radius: 5px;
     margin-bottom: 20px;
     border: 1px solid white;
     font-family: 'Neucha';
-
+    
 }
 .formContacto .boton{
     width: 50%;
-    background-color: rgb(197, 74, 74);
+    background-color: rgb(148, 78, 212);
     border: none;
     padding: 5px;
     margin: 5px;
     border-radius: 5px;
+}
+/*footer*/
+
+.final{
+    background-color: #4E1A3D;
+    width: 100%;
+    color: #DA70D6;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+.final img{
+    width: 30px;
 }
