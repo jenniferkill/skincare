@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color:#DA70D6 ;
+    background-color:#FFDAB9;
 }
 /* Menu */
 .Cabecera h1{
@@ -58,7 +58,6 @@ body{
 /* menu posible*/
 
 .Menu_externo{
-    background-color: #DA70D6;
     font-family: 'Neucha';
     font-weight: bold;
     font-size: 20px;
@@ -78,7 +77,6 @@ body{
 
 /* contenido*/
 .Principal{
-    background-color: #DA70D6;
     width: 80%;
 }
 
@@ -88,25 +86,52 @@ body{
     padding: 25px;
     color: #4E1A3D;
 }
-/*table*/
-.Principal table{
-    font-family: 'Neucha';
-    font-size: 16px;
+.PrinContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "imagen letra letra titulos"
+                         "letra2 letra2 imagen2 titulos2"
+                         "imagen3 letra3 letra3 titulos3";
+    justify-items: center; 
+    align-items: center;       
     color: #4E1A3D;
+    font-size: 20px;
+
 }
-.Principal td{
-    border: #4E1A3D  solid 2px;
+.PrinContImag1{ 
+    grid-area: imagen; 
+    width: 200px;
 }
-.Principal img{
-    width: 180px;
-    text-align: center;
-    padding: 15px;
+.PrinConttex1 { 
+    grid-area: letra ;
+    
+}   
+.PrinContTitulo1 { 
+    grid-area: titulos; 
+    font-size: 35px;
 }
-.Principal h2{
-    font-family: 'Neucha';
-    font-size: 30px;
-    text-align: center;
-    color: #4E1A3D;;
+.PrinConttex2 {
+     grid-area: letra2; 
+}
+.PrinContImag2 { 
+    grid-area: imagen2;
+    width: 200px;
+}
+.PrinContTitulo2{ 
+    grid-area: titulos2;
+    font-size: 35px;
+}
+.PrinContImag3 { 
+    grid-area: imagen3; 
+    width: 200px;
+}
+.PrinConttex3 { 
+    grid-area: letra3;
+}
+.PrinContTitulo3 { 
+    grid-area: titulos3; 
+    font-size: 35px;
 }
 
 /* formulario*/
