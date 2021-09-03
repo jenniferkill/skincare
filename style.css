@@ -28,6 +28,9 @@ body{
 .menu a{
     width: 20%;
 }
+.menu a :hover{
+    transform: scale(2,1);
+}
 .navigation{
     display: flex;
     list-style: none;
@@ -36,6 +39,10 @@ body{
     font-size: 20px;
     text-align: center;
     align-items: center;
+}
+.navigation :hover{
+    color: #DA70D6;
+    transform: scale(2,1);
 }
 .navigationOptions{
     float: right;
@@ -56,7 +63,9 @@ body{
 }
 
 /* menu posible*/
-
+.NavIma{
+    visibility: hidden;
+}
 .Menu_externo{
     font-family: 'Neucha';
     font-weight: bold;
@@ -69,13 +78,13 @@ body{
     list-style: none;
     
 }
-.Menu_externo li{
+.NavTex li{
     border: #4E1A3D solid 2px;
     margin: 10px;
     padding: 5px;
 }
 
-/* contenido*/
+/* contenido index*/
 .Principal{
     width: 80%;
 }
@@ -133,6 +142,101 @@ body{
     grid-area: titulos3; 
     font-size: 35px;
 }
+/* contenido cuidado basico */
+h1{
+    font-size: 30px;
+    text-align: center;
+    color: #4E1A3D;
+    margin: 50px;
+}
+.CbMain h3{
+    text-align: center;
+}
+.CbMain{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(12, auto);
+    grid-template-areas: "imagen titulo1"
+                         "imagen text1"
+                         "imagen imagen1"
+                        
+                         "titulo2 imagen2"
+                         "text2 imagen2"
+                         "imagen3 imagen2" 
+                        
+                         "imagen4 titulo3"
+                         "imagen4 text3"
+                         "imagen4 imagen5"
+                        
+                         "titulo4 imagen6"
+                         "text4 imagen6"
+                         "imagen7 imagen6" ;
+    justify-items: center; 
+    align-items: center;       
+    color: #4E1A3D;
+    font-size: 20px;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+.CbMain_ima1{
+    grid-area: imagen;
+    width: 300px;
+
+}
+.CbMain_titulo1{
+    grid-area: titulo1;
+
+}
+.CbMain_text1{
+    grid-area: text1;
+}
+.CbMain_ima2{
+    grid-area: imagen1;
+    width: 150px;
+}
+.CbMain_ima3{
+    grid-area: imagen2;
+    width: 300px;
+}
+.CbMain_titulo2{
+    grid-area: titulo2;
+}
+.CbMain_text2{
+    grid-area: text2;
+}
+.CbMain_ima4{
+    grid-area: imagen3;
+    width: 150px;
+}
+.CbMain_ima5{
+    grid-area: imagen4;
+    width: 300px;
+}
+.CbMain_titulo3{
+    grid-area: titulo3;
+}
+.CbMain_text3{
+    grid-area: text3;
+}
+.CbMain_ima6{
+    grid-area: imagen5;
+    width: 150px;
+}
+.CbMain_ima7{
+    grid-area: imagen6;
+    width: 300px;
+}
+.CbMain_titulo4{
+    grid-area: titulo4;
+}
+.CbMain_text4{
+    grid-area: text4;
+}
+.CbMain_ima8{
+    grid-area: imagen7;
+    width: 150px;
+
+}
 
 /* formulario*/
 
@@ -172,7 +276,7 @@ body{
 /*footer*/
 
 .final{
-    background-color: #4E1A3D;
+    background-image: linear-gradient(to right, rgb(142, 118, 150) , rgb(51, 4, 90));
     width: 100%;
     color: #DA70D6;
     align-items: center;
@@ -183,4 +287,100 @@ body{
 }
 .final img{
     width: 30px;
+}
+@media only screen and (max-width:700px) {
+   *{
+       margin: 0px;
+       padding: 0px;
+   }
+    /* menu */
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 10px;
+    }
+    .navigation{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu a{
+        width: 40%;
+    } 
+    /*contenido*/
+    /*aside */
+    .Menu_externo{
+        width: 25%;
+        margin-right: 9px;
+    }
+    .NavTex{
+        display: none;
+    }
+    .NavIma{
+        visibility: visible;
+    }
+    .NavIma img{
+        width: 70px;
+    }
+    /*main*/
+    .Principal_text{
+        font-size: 17px;
+        text-align: center;
+    }
+    .PrinContainer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: "titulos "
+                             "imagen"
+                             "text1"
+                             "separador"
+                             "titulos2"
+                             "imagen2"
+                             "text2"
+                             "separador2"
+                             "titulos3"
+                             "imagen3"
+                             "text3";
+        align-items: center;       
+        color: #4E1A3D;
+        row-gap: 5px;
+    }
+    .PrinContImag1{ 
+        grid-area: imagen; 
+        width: 150px;
+    }
+    .PrinConttex1 { 
+        grid-area: text1;
+        font-size: 15px; 
+    }   
+
+    .PrinContTitulo1 { 
+        grid-area: titulos; 
+        font-size: 20px;
+    }
+    .PrinConttex2 {
+         grid-area: text2; 
+         font-size: 15px;
+    }
+    .PrinContImag2 { 
+        grid-area: imagen2;
+        width: 150px;
+    }
+    .PrinContTitulo2{ 
+        grid-area: titulos2;
+        font-size: 20px;
+    }
+    .PrinContImag3 { 
+        grid-area: imagen3; 
+        width: 150px;
+    }
+    .PrinConttex3 { 
+        grid-area: text3;
+        font-size: 15px;
+    }
+    .PrinContTitulo3 { 
+        grid-area: titulos3; 
+        font-size: 20px;
+    }
 }
