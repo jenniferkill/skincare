@@ -28,9 +28,6 @@ body{
 .menu a{
     width: 20%;
 }
-.menu a :hover{
-    transform: scale(2,1);
-}
 .navigation{
     display: flex;
     list-style: none;
@@ -42,7 +39,6 @@ body{
 }
 .navigation :hover{
     color: #DA70D6;
-    transform: scale(2,1);
 }
 .navigationOptions{
     float: right;
@@ -180,7 +176,7 @@ h1{
 }
 .CbMain_ima1{
     grid-area: imagen;
-    width: 300px;
+    width: 75%;
 
 }
 .CbMain_titulo1{
@@ -196,7 +192,7 @@ h1{
 }
 .CbMain_ima3{
     grid-area: imagen2;
-    width: 300px;
+    width: 75%;
 }
 .CbMain_titulo2{
     grid-area: titulo2;
@@ -210,7 +206,7 @@ h1{
 }
 .CbMain_ima5{
     grid-area: imagen4;
-    width: 300px;
+    width: 75%;
 }
 .CbMain_titulo3{
     grid-area: titulo3;
@@ -276,22 +272,23 @@ h1{
 /*footer*/
 
 .final{
-    background-image: linear-gradient(to right, rgb(142, 118, 150) , rgb(51, 4, 90));
+    background-color: #4E1A3D;
     width: 100%;
     color: #DA70D6;
     align-items: center;
-    display: flex;
-    flex-direction: column;
+    text-align: center;
     justify-content: space-between;
     padding: 30px;
 }
 .final img{
     width: 30px;
 }
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:600px) {
    *{
        margin: 0px;
        padding: 0px;
+       font-size: 16px;
+       
    }
     /* menu */
     .menu{
@@ -299,6 +296,7 @@ h1{
         justify-content: space-between;
         align-items: center;
         margin-left: 10px;
+        
     }
     .navigation{
         display: flex;
@@ -324,7 +322,7 @@ h1{
     }
     /*main*/
     .Principal_text{
-        font-size: 17px;
+        font-size: 14px;
         text-align: center;
     }
     .PrinContainer{
@@ -352,16 +350,18 @@ h1{
     }
     .PrinConttex1 { 
         grid-area: text1;
-        font-size: 15px; 
+        font-size: 14px;
+        text-align: justify; 
     }   
 
     .PrinContTitulo1 { 
         grid-area: titulos; 
-        font-size: 20px;
+        font-size: 16px;
     }
     .PrinConttex2 {
          grid-area: text2; 
-         font-size: 15px;
+         font-size: 14px;
+         text-align: justify;
     }
     .PrinContImag2 { 
         grid-area: imagen2;
@@ -369,7 +369,7 @@ h1{
     }
     .PrinContTitulo2{ 
         grid-area: titulos2;
-        font-size: 20px;
+        font-size: 16px;
     }
     .PrinContImag3 { 
         grid-area: imagen3; 
@@ -377,10 +377,16 @@ h1{
     }
     .PrinConttex3 { 
         grid-area: text3;
-        font-size: 15px;
+        font-size: 14px;
+        text-align: justify;
     }
     .PrinContTitulo3 { 
         grid-area: titulos3; 
-        font-size: 20px;
+        font-size: 16px;
     }
 }
+@media only screen and (min-width:600px){
+    
+    
+}
+@media only screen and (min-width: 992px)
