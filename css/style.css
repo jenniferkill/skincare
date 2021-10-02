@@ -1,0 +1,322 @@
+.Menu_externo {
+  font-family: "Neucha";
+  font-weight: bold;
+  font-size: 20px;
+  width: 15%;
+  list-style: none;
+  text-align: right; }
+  .Menu_externo ul {
+    margin: 10px;
+    list-style: none;
+    padding: 0%; }
+  .Menu_externo .NavIma {
+    visibility: hidden; }
+  .Menu_externo li {
+    margin: 10px;
+    padding: 5px; }
+
+@media only screen and (max-width: 790px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px; }
+  .Menu_externo {
+    width: 25%;
+    margin: 9px; }
+    .Menu_externo .NavTex {
+      display: none; }
+    .Menu_externo .NavIma {
+      visibility: visible; }
+      .Menu_externo .NavIma img {
+        width: 70px; } }
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFDAB9; }
+  .menu img {
+    width: 100%;
+    border: #250c2c solid 2px;
+    margin: 5px; }
+  .menu a {
+    width: 20%; }
+    .menu a :link :visited :active {
+      text-decoration: none;
+      color: #4E1A3D; }
+  .menu .navigation {
+    display: flex;
+    list-style: none;
+    font-family: "Neucha";
+    font-size: 20px;
+    text-align: center;
+    align-items: center; }
+    .menu .navigation :hover {
+      color: #DA70D6; }
+    .menu .navigation .navigationOptions {
+      float: right;
+      flex-direction: row;
+      width: 120px; }
+
+.navbar {
+  background-color: #f3d2b5; }
+
+@media only screen and (max-width: 790px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px; }
+  .navigation {
+    visibility: hidden; }
+  .menu {
+    display: flex;
+    justify-content: flex-end; } }
+
+h1 {
+  text-align: center;
+  color: #4E1A3D; }
+
+h2 {
+  color: #4E1A3D; }
+
+h3 {
+  color: #4E1A3D; }
+
+.resaltar {
+  font-size: 20px; }
+
+p {
+  color: #4E1A3D;
+  font-size: 18px; }
+
+.MainHidratante {
+  color: #4E1A3D;
+  display: grid;
+  grid-template-columns: repeat(4, 225px);
+  grid-template-rows: 400px, 100px;
+  grid-template-areas: "part1 part1 part1 ima1" "part2 part2 part3 part3"; }
+  .MainHidratante .part1 {
+    grid-area: part1; }
+  .MainHidratante .ima1 {
+    grid-area: ima1; }
+  .MainHidratante .part2 {
+    grid-area: part2;
+    height: 100px; }
+  .MainHidratante .part3 {
+    grid-area: part3;
+    height: 100px; }
+
+.ima2 {
+  height: 200px;
+  width: 400px; }
+
+.ima3 {
+  height: 200px;
+  width: 260px; }
+
+.ima5 {
+  height: 400px;
+  width: 35%; }
+
+.Dif {
+  text-align: center;
+  font-size: 40px;
+  color: #4E1A3D; }
+
+.diferencias {
+  color: #4E1A3D;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "ima5 part4 part4"; }
+  .diferencias .ima5 {
+    grid-area: ima5;
+    width: 350px;
+    height: 350px; }
+  .diferencias .part4 {
+    grid-area: part4; }
+
+.Principal {
+  width: 80%; }
+  .Principal p {
+    color: #4E1A3D; }
+
+.Principal_text {
+  font-family: "Neucha";
+  font-size: 18px;
+  padding: 25px;
+  color: #4E1A3D; }
+
+.PrinContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "imagen letra letra titulos" "letra2 letra2 imagen2 titulos2" "imagen3 letra3 letra3 titulos3";
+  justify-items: center;
+  align-items: center;
+  color: #4E1A3D;
+  font-size: 20px; }
+
+.PrinContImag1 {
+  grid-area: imagen;
+  width: 200px; }
+
+.PrinConttex1 {
+  grid-area: letra; }
+
+.PrinContTitulo1 {
+  grid-area: titulos;
+  font-size: 35px; }
+
+.PrinConttex2 {
+  grid-area: letra2; }
+
+.PrinContImag2 {
+  grid-area: imagen2;
+  width: 200px; }
+
+.PrinContTitulo2 {
+  grid-area: titulos2;
+  font-size: 35px; }
+
+.PrinContImag3 {
+  grid-area: imagen3;
+  width: 200px; }
+
+.PrinConttex3 {
+  grid-area: letra3; }
+
+.PrinContTitulo3 {
+  grid-area: titulos3;
+  font-size: 35px; }
+
+.final {
+  background-color: #4E1A3D;
+  width: 100%;
+  color: #DA70D6;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding: 30px; }
+  .final img {
+    width: 30px; }
+  .final p {
+    color: #FFDAB9; }
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #4E1A3D;
+  margin: 50px; }
+
+.CbMain {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(12, auto);
+  grid-template-areas: "imagen titulo1" "imagen text1" "imagen imagen1"  "titulo2 imagen2" "text2 imagen2" "imagen3 imagen2"   "imagen4 titulo3" "imagen4 text3" "imagen4 imagen5"  "titulo4 imagen6" "text4 imagen6" "imagen7 imagen6";
+  justify-items: center;
+  align-items: center;
+  color: #4E1A3D;
+  font-size: 20px;
+  row-gap: 5px;
+  column-gap: 5px; }
+  .CbMain h3 {
+    text-align: center; }
+
+.CbMain_ima1 {
+  grid-area: imagen;
+  width: 300px;
+  height: 250px; }
+
+.CbMain_titulo1 {
+  grid-area: titulo1; }
+
+.CbMain_text1 {
+  grid-area: text1; }
+
+.CbMain_ima2 {
+  grid-area: imagen1;
+  width: 150px; }
+
+.CbMain_ima3 {
+  grid-area: imagen2;
+  width: 300px;
+  height: 250px; }
+
+.CbMain_titulo2 {
+  grid-area: titulo2; }
+
+.CbMain_text2 {
+  grid-area: text2; }
+
+.CbMain_ima4 {
+  grid-area: imagen3;
+  width: 150px; }
+
+.CbMain_ima5 {
+  grid-area: imagen4;
+  width: 300px;
+  height: 250px; }
+
+.CbMain_titulo3 {
+  grid-area: titulo3; }
+
+.CbMain_text3 {
+  grid-area: text3; }
+
+.CbMain_ima6 {
+  grid-area: imagen5;
+  width: 150px; }
+
+.CbMain_ima7 {
+  grid-area: imagen6;
+  width: 300px;
+  height: 250px; }
+
+.CbMain_titulo4 {
+  grid-area: titulo4; }
+
+.CbMain_text4 {
+  grid-area: text4; }
+
+.CbMain_ima8 {
+  grid-area: imagen7;
+  width: 150px; }
+
+.formContacto {
+  width: 300px;
+  border: #944ed4 solid 2px;
+  background-size: contain;
+  padding: 50px;
+  margin: auto;
+  border-radius: 30px;
+  font-family: 'Neucha';
+  color: #4B0082;
+  font-weight: bold; }
+  .formContacto .boton {
+    width: 50%;
+    background-color: #944ed4;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px; }
+  .formContacto .titulo {
+    color: #4E1A3D;
+    background-color: wheat; }
+  .formContacto .ingreso {
+    width: 100%;
+    background-color: #944ed4;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    font-family: 'Neucha'; }
+
+.Contenido {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  font-family: "Neucha";
+  background-color: #FFDAB9; }
+
+.General {
+  background-color: #f3d2b5; }

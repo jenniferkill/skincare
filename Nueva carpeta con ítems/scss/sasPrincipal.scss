@@ -1,0 +1,16 @@
+@import "variables";
+@import "menuext";
+@import "nav";
+@import "contenido";
+@import "../lib/bootstrap/scss/bootstrap"
+
+.Contenido{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    font-family: $fontestilo;
+    background-color: $colorfond;
+}
+body{
+    background-color: $colorbody;
+}

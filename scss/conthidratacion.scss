@@ -1,0 +1,77 @@
+h1{
+    text-align: center;
+    color: $colorletras;
+}
+h2{
+    color: $colorletras;
+}
+h3{
+    color: $colorletras ;
+}
+.resaltar{
+    font-size: $fonttamaño-m;
+}
+p{
+    color: $colorletras;
+    font-size: $fonttamaño-s;
+}
+
+.MainHidratante{
+    color: $colorletras;
+    display: grid;
+    grid-template-columns: repeat(4,225px);
+    grid-template-rows: (400px,100px);
+    grid-template-areas: "part1 part1 part1 ima1"
+                         "part2 part2 part3 part3";
+                         
+    .part1{
+        grid-area: part1;
+    }
+    .ima1{
+        grid-area: ima1;
+    }
+    .part2{
+        grid-area: part2;
+        height: 100px;
+    }
+    
+    .part3{
+        grid-area: part3;
+        height: 100px;
+        
+    }
+    
+}
+.ima2{
+    height: 200px;
+    width: 400px;
+}
+.ima3{
+    height: 200px;
+    width: 260px;
+}
+.ima5{
+    height: 400px;
+    width: 35%;
+}
+.Dif{
+    text-align: center;
+    font-size: 40px;
+    color: $colorletras;
+}
+.diferencias{
+    color: $colorletras;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: (1fr);
+    grid-template-areas:"ima5 part4 part4";
+    .ima5{
+        grid-area: ima5;
+        width: 350px;
+        height: 350px;
+    }
+    .part4{
+        grid-area: part4;
+    }
+}
+

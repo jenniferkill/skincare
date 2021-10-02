@@ -4,46 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Cuidado Diario</title>
 </head>
-<body>
-    <nav class="menu">
-        <a href="index.html"><img src="imagenes/logo.svg" alt="Skincare"></a>
-        <ul class="navigation">       
-            <li class="navigationOptions">
-                <a href="cuidadodiario.html">Cuidado Diario</a>
-            </li>
-            <li class="navigationOptions">
-                <a href="afecciones.html">afecciones</a>
-            </li>
-            <li class="navigationOptions">
-                <a href="productos.html">productos</a>
-            </li>
-            <li class="navigationOptions">
-                <a href="protocolos.html">protocolos</a>
-            </li>
-            <li class="navigationOptions">
-                <a href="Contacto.html">Contacto</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="Contenido">
-        <aside class="Menu_externo">
-            <ul class="NavTex">
-                <li>Hidratantes</li>
-                <li>Tonicos</li>
-                <li>Filtros</li>
-            </ul> 
-            <ul class="NavIma">
-                <li><img src="imagenes/hidratante.svg" alt="Hidratantes"></li>
-                <li><img src="imagenes/AsiTonicos.svg" alt="Tonicos"></li>
-                <li><img src="imagenes/protector.svg" alt="Filtro Solar"></li>
-            </ul>
-        </aside>
+<body class="General">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid bd-highlight mb-3 d-flex flex-row-reverse">  
+          <a class="navbar-brand" href="index.html"><img style="width: 200px;" src="imagenes/logo.svg" alt="Skincare"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link"  href="cuidadodiario.html">Cuidado Diario</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="afecciones.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Afecciones
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="afecciones.html">Rosasea</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="afecciones.html">Acne</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contacto.html">Contacto</a>
+                </li>
+                </ul>
+          </div>
+        </div>
+      </nav>
+       <div class="Contenido">
+           <aside class="Menu_externo">
+               <ul class="NavTex">
+                   <li><a href="Hidratantes.html"><button type="button" class="btn btn-outline-dark btn-lg"> <strong> Hidratantes </strong></button></a></li>
+                   <li><button type="button" class="btn btn-outline-dark btn-lg"><strong>Tonicos</strong></button></li>
+                   <li><button type="button" class="btn btn-outline-dark btn-lg"><strong>Filtros</strong></button></li>
+               </ul> 
+               <ul class="NavIma">
+                   <li><a href="Hidratantes.html"><img src="imagenes/hidratante.svg" alt="Hidratantes"></a></li>
+                   <li><img src="imagenes/AsiTonicos.svg" alt="Tonicos"></li>
+                   <li><img src="imagenes/protector.svg" alt="Filtro Solar"></li>
+               </ul>
+           </aside>
         <main class="Principal">
             <h1>Cuidado Basico de la piel </h1>
             <div class="CbMain">

@@ -1,0 +1,44 @@
+
+.Menu_externo{
+    font-family: $fontestilo;
+    font-weight: bold;
+    font-size: $fonttamaño-m;
+    width: 15%;
+    list-style: none;
+    text-align:right ;
+    ul{
+        margin: 10px;
+        list-style: none;
+        padding: 0%;
+    }
+    .NavIma{
+        visibility: hidden;
+    }
+    li{
+        margin: 10px;
+        padding: 5px;
+    }
+}
+
+
+@media only screen and (max-width:790px){
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-size: 16px;
+    }
+    .Menu_externo{
+        width: 25%;
+        margin: 9px;
+        .NavTex{
+            display: none;
+        }
+        .NavIma{
+            visibility: visible;
+            img{
+                width: 70px
+            }
+        }
+
+    }
+}

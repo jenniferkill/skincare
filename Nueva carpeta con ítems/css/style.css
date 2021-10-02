@@ -1,0 +1,82 @@
+.Menu_externo {
+  font-family: "Neucha";
+  font-weight: bold;
+  font-size: 20px;
+  width: 20%;
+  list-style: none; }
+  .Menu_externo ul {
+    margin: 10px;
+    list-style: none;
+    padding: 0%; }
+  .Menu_externo .NavIma {
+    visibility: hidden; }
+  .Menu_externo li {
+    margin: 10px;
+    padding: 5px; }
+
+@media only screen and (max-width: 790px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px; }
+  .Menu_externo {
+    width: 25%;
+    margin: 9px; }
+    .Menu_externo .NavTex {
+      display: none; }
+    .Menu_externo .NavIma {
+      visibility: visible; }
+      .Menu_externo .NavIma img {
+        width: 70px; } }
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFDAB9; }
+  .menu img {
+    width: 100%;
+    border: #250c2c solid 2px;
+    margin: 5px; }
+  .menu a {
+    width: 20%; }
+    .menu a :link :visited :active {
+      text-decoration: none;
+      color: #4E1A3D; }
+  .menu .navigation {
+    display: flex;
+    list-style: none;
+    font-family: "Neucha";
+    font-size: 20px;
+    text-align: center;
+    align-items: center; }
+    .menu .navigation :hover {
+      color: #DA70D6; }
+    .menu .navigation .navigationOptions {
+      float: right;
+      flex-direction: row;
+      width: 120px; }
+
+.navbar {
+  background-color: #f3d2b5;
+  font-family: "Neucha"; }
+
+@media only screen and (max-width: 790px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px; }
+  .navigation {
+    visibility: hidden; }
+  .menu {
+    display: flex;
+    justify-content: flex-end; } }
+
+.Contenido {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  font-family: "Neucha";
+  background-color: #FFDAB9; }
+
+body {
+  background-color: #f3d2b5; }

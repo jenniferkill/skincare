@@ -1,0 +1,54 @@
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: $colorfond;
+    img{
+        width: 100%;
+        border: rgb(37, 12, 44) solid 2px;
+        margin: 5px;
+    }
+    a{
+        width: 20%;
+        :link :visited :active{
+            text-decoration: none;
+            color: $colorletras;
+        }
+    }
+    .navigation{
+        display: flex;
+        list-style: none;
+        font-family: $fontestilo;
+        font-size: $fonttamaño-m;
+        text-align: center;
+        align-items: center;
+        :hover{
+            color: $colorhover;
+        }
+    
+        .navigationOptions{
+            float: right;
+            flex-direction: row;
+            width: 120px;      
+        }
+    }
+}
+.navbar{
+ background-color: $colorbody ;
+}
+
+@media only screen and (max-width:790px){
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-size: 16px;
+        
+    }
+    .navigation{
+        visibility: hidden;
+    }
+    .menu{
+        display: flex;
+        justify-content: flex-end;
+    }
+   
+}
