@@ -8,7 +8,7 @@
 .Principal_text{
     font-family: $fontestilo;
     font-size: $fonttamaño-s;
-    padding: 25px;
+    padding: 5px;
     color: $colorletras;
 }
 .PrinContainer{
@@ -23,38 +23,38 @@
     color: $colorletras;
     font-size: $fonttamaño-m;
 
+    .PrinContImag1{ 
+        grid-area: imagen; 
+        width: 200px;
+    }
+    .PrinConttex1 { 
+        grid-area: letra ;
+        
+    }   
+    .PrinContTitulo1 { 
+        grid-area: titulos; 
+        font-size: $fonttamaño-x;
+    }
+    .PrinConttex2 {
+        grid-area: letra2; 
+    }
+    .PrinContImag2 { 
+        grid-area: imagen2;
+        width: 200px;
+    }
+    .PrinContTitulo2{ 
+        grid-area: titulos2;
+        font-size: $fonttamaño-x;
+    }
+    .PrinContImag3 { 
+        grid-area: imagen3; 
+        width: 200px;
+    }
+    .PrinConttex3 { 
+        grid-area: letra3;
+    }
+    .PrinContTitulo3 { 
+        grid-area: titulos3; 
+        font-size: $fonttamaño-x;
 }
-.PrinContImag1{ 
-    grid-area: imagen; 
-    width: 200px;
-}
-.PrinConttex1 { 
-    grid-area: letra ;
-    
-}   
-.PrinContTitulo1 { 
-    grid-area: titulos; 
-    font-size: $fonttamaño-x;
-}
-.PrinConttex2 {
-     grid-area: letra2; 
-}
-.PrinContImag2 { 
-    grid-area: imagen2;
-    width: 200px;
-}
-.PrinContTitulo2{ 
-    grid-area: titulos2;
-    font-size: $fonttamaño-x;
-}
-.PrinContImag3 { 
-    grid-area: imagen3; 
-    width: 200px;
-}
-.PrinConttex3 { 
-    grid-area: letra3;
-}
-.PrinContTitulo3 { 
-    grid-area: titulos3; 
-    font-size: $fonttamaño-x;
 }

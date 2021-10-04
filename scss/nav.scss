@@ -28,14 +28,19 @@
         .navigationOptions{
             float: right;
             flex-direction: row;
-            width: 120px;      
+            width: 100px;      
         }
     }
 }
 .navbar{
  background-color: $colorbody ;
 }
-
+#Navletra{
+    color: $colorletras;
+}
+#desplegable{
+    background-color: $colorbody;
+}
 @media only screen and (max-width:790px){
     *{
         margin: 0px;

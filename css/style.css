@@ -55,10 +55,16 @@
     .menu .navigation .navigationOptions {
       float: right;
       flex-direction: row;
-      width: 120px; }
+      width: 100px; }
 
 .navbar {
-  background-color: #f3d2b5; }
+  background-color: #FFDAB9; }
+
+#Navletra {
+  color: #4E1A3D; }
+
+#desplegable {
+  background-color: #FFDAB9; }
 
 @media only screen and (max-width: 790px) {
   * {
@@ -143,7 +149,7 @@ p {
 .Principal_text {
   font-family: "Neucha";
   font-size: 18px;
-  padding: 25px;
+  padding: 5px;
   color: #4E1A3D; }
 
 .PrinContainer {
@@ -155,39 +161,30 @@ p {
   align-items: center;
   color: #4E1A3D;
   font-size: 20px; }
-
-.PrinContImag1 {
-  grid-area: imagen;
-  width: 200px; }
-
-.PrinConttex1 {
-  grid-area: letra; }
-
-.PrinContTitulo1 {
-  grid-area: titulos;
-  font-size: 35px; }
-
-.PrinConttex2 {
-  grid-area: letra2; }
-
-.PrinContImag2 {
-  grid-area: imagen2;
-  width: 200px; }
-
-.PrinContTitulo2 {
-  grid-area: titulos2;
-  font-size: 35px; }
-
-.PrinContImag3 {
-  grid-area: imagen3;
-  width: 200px; }
-
-.PrinConttex3 {
-  grid-area: letra3; }
-
-.PrinContTitulo3 {
-  grid-area: titulos3;
-  font-size: 35px; }
+  .PrinContainer .PrinContImag1 {
+    grid-area: imagen;
+    width: 200px; }
+  .PrinContainer .PrinConttex1 {
+    grid-area: letra; }
+  .PrinContainer .PrinContTitulo1 {
+    grid-area: titulos;
+    font-size: 35px; }
+  .PrinContainer .PrinConttex2 {
+    grid-area: letra2; }
+  .PrinContainer .PrinContImag2 {
+    grid-area: imagen2;
+    width: 200px; }
+  .PrinContainer .PrinContTitulo2 {
+    grid-area: titulos2;
+    font-size: 35px; }
+  .PrinContainer .PrinContImag3 {
+    grid-area: imagen3;
+    width: 200px; }
+  .PrinContainer .PrinConttex3 {
+    grid-area: letra3; }
+  .PrinContainer .PrinContTitulo3 {
+    grid-area: titulos3;
+    font-size: 35px; }
 
 .final {
   background-color: #4E1A3D;
@@ -319,4 +316,4 @@ h1 {
   background-color: #FFDAB9; }
 
 .General {
-  background-color: #f3d2b5; }
+  background-color: #FFDAB9; }
