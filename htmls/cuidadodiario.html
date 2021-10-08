@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" name="Rutina generica para tener en cuenta en el dia a dia para evitar puntos negros manchas  y arrugas prematuras.">
+    <meta name="keywords"  content="Skincare, Rutina, Maculas, Puntos Negros, cuidado">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -14,28 +16,24 @@
 <body class="General">
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid bd-highlight mb-3 d-flex flex-row-reverse">  
-          <a class="navbar-brand" href="index.html"><img style="width: 200px;" src="imagenes/logo.svg" alt="Skincare"></a>
+          <a class="navbar-brand" href="../index.html"><img style="width: 200px;" src="../imagenes/logo.svg" alt="Skincare"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" id="Navletra" href="cuidadodiario.html">Cuidado Diario</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="Navletra" href="afecciones.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" id="Navletra"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Afecciones
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="desplegable">
-                    <li><a class="dropdown-item "  href="afecciones.html">Rosasea</a></li>
+                    <li><a class="dropdown-item "  href="rosacea.html">Rosasea</a></li>
                     
-                    <li><a class="dropdown-item " href="afecciones.html#Acne">Acne</a></li>
+                    <li><a class="dropdown-item " href="acne.html">Acne</a></li>
                     </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="Navletra" href="productos.html">Productos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="Navletra" href="Contacto.html">Contacto</a>
@@ -45,61 +43,69 @@
         </div>
       </nav>
        <div class="Contenido">
-           <aside class="Menu_externo">
-               <ul class="NavTex">
-                   <li><a href="Hidratantes.html"><button type="button" class="btn btn-outline-dark btn-lg"> <strong> Hidratantes </strong></button></a></li>
-                   <li><button type="button" class="btn btn-outline-dark btn-lg"><strong>Tonicos</strong></button></li>
-                   <li><button type="button" class="btn btn-outline-dark btn-lg"><strong>Filtros</strong></button></li>
-               </ul> 
-               <ul class="NavIma">
-                   <li><a href="Hidratantes.html"><img src="imagenes/hidratante.svg" alt="Hidratantes"></a></li>
-                   <li><img src="imagenes/AsiTonicos.svg" alt="Tonicos"></li>
-                   <li><img src="imagenes/protector.svg" alt="Filtro Solar"></li>
-               </ul>
-           </aside>
+        <aside class="Menu_externo">
+            <ul class="NavTex">
+                <li><a href="Hidratantes.html"><button type="button" class="btn btn-outline-dark btn-lg"><strong> Hidratantes </strong></button></a></li>
+                <li><a href="productos.html"><button type="button" class="btn btn-outline-dark btn-lg"><strong>Productos</strong></button></a></li>
+            </ul> 
+            <ul class="NavIma">
+                <li><a href="Hidratantes.html"><img src="../imagenes/hidratante.svg" alt="Hidratantes"></a></li>
+                <li><a href="productos.html"><img src="../imagenes/productos.svg" alt="Tonicos"></a></li>
+            </ul>
+        </aside>
         <main class="Principal">
             <h1>Cuidado Basico de la piel </h1>
+            <p>El cuidado diario es tan importante como bañarse a diario por que cuando la rutina se hace a la mañana y a la noche puedes llegar evitar granitos , arrugas, líneas de expresión prematuras, engrosamientos.</p> 
+            <p>la rutina que ves a continuación es algo básico y genérico de los pasos que necesitas para tu rutina diaria y el porqué se debe hacer cada paso </p>
+                
             <div class="CbMain">
                 <!-- limpieza -->
-                    <img src="imagenes/limpieza.png" alt="limpieza" class="CbMain_ima1">
+                <div class="Limpieza">
+                    <img src="../imagenes/humectarfondoclaro.png" alt="limpieza" class="CbMain_ima1">
                     <div class="CbMain_titulo1">
                         <h2>Lavate la Cara</h2>
                         <h3>Jabon</h3>
                     </div>
                     <p class="CbMain_text1">A la mañana y a la noche lavate la cara asi quitas impurezas y EVITAR puntos negros o Maculas (granitos) si lo puedes acompañar con un cepillito de Limpieza como por ejemplo</p>
-                    <img src="imagenes/elementos.png" alt="elementos" class="CbMain_ima2">
-                <!-- tonico -->    
-                    <img src="imagenes/tonico.png" alt="tonico" class="CbMain_ima3">
+                    <img src="../imagenes/elementos.png" alt="elementos" class="CbMain_ima2">
+                </div>
+                <!-- tonico -->  
+                <div class="tonico">  
+                    <img src="../imagenes/tonico.png" alt="tonico" class="CbMain_ima3">
                     <div class="CbMain_titulo2">
                         <h2>Calma la Piel</h2>
                         <h3>Locion o Tonico</h3>
                     </div>
                     <p class="CbMain_text2">Despues de quitarle toda la suciedad ya sea del dia o la noche lo mejor es volver a darle proteccion a esa piel desnuda y limpia pero sobre todo se debe tener en cuenta que al limpiarla ella va a sentirse agredida por esto agregale un poco de tranquilidad con un tonico </p>
-                    <img src="imagenes/tonicos.png" alt="Tonicos" class="CbMain_ima4">
+                    <img src="../imagenes/tonicos.png" alt="Tonicos" class="CbMain_ima4">
+                </div>    
                 <!--humectante-->
-                    <img src="imagenes/humectar.png" alt="Humectar" class="CbMain_ima5">
+                <div class="hidratar">
+                    <img src="../imagenes/limpiezafondoclaro.png " alt="Humectar" class="CbMain_ima5">
                     <div class="CbMain_titulo3">
                         <h2>Hidratarse la Piel</h2>
                         <h3>Cremas o Serums</h3>
                     </div>    
                     <p class="CbMain_text3">agregarle 5 minutos despues una crema o serum va a ser el momento perfecto para que la piel reciba todo lo que nesecita externamente </p>
-                    <img src="imagenes/cremitas.png" alt="Humectantes" class="CbMain_ima6">
+                    <img src="../imagenes/cremitas.png" alt="Humectantes" class="CbMain_ima6">
+                </div>    
                 <!--filtro solar-->    
-                    <img src="imagenes/filtro.png" alt="filtro solar" class="CbMain_ima7">
+                <div class="proteccion">
+                    <img src="../imagenes/filtro.png" alt="filtro solar" class="CbMain_ima7">
                     <div class="CbMain_titulo4">
                         <h2>Protegerse la Piel</h2>
                         <h3>Crema o locion</h3>
                     </div>    
                     <p class="CbMain_text4">Ahora se debe tener en cuenta que al hacer ingresar cosas buenas en la piel tambien ingresan cosas malas como rayos uva o uvb que esto hace que se arrugue o que se generen lineas de expresion profundas asi que la mejor forma de protegerse es aplicandose protector solar pero no dejar de recordar que se elimina o pierde efecto cada dos horas asi que se tiene que renovar una y otra vez asi no se exponga al sol </p>
-                    <img src="imagenes/protectorSolar.png" alt="Protector Solar"  class="CbMain_ima8">
-               
+                    <img src="../imagenes/protectorSolar.png" alt="Protector Solar"  class="CbMain_ima8">
+                </div>    
             </div>
         </main>
     </div>
     <footer class="final">
         <div>
-            <img src="imagenes/insta.png" alt="Instagram" >
-            <img src="imagenes/Facebook.png" alt="Facebook" > 
+            <img src="../imagenes/insta.png" alt="Instagram" >
+            <img src="../imagenes/Facebook.png" alt="Facebook" > 
         </div>
         <br>
         <p>Hecho en el 2021</p>

@@ -15,63 +15,211 @@ p{
     color: $colorletras;
     font-size: $fonttamaño-s;
 }
-
 .MainHidratante{
-    color: $colorletras;
-    display: grid;
-    grid-template-columns: repeat(4,225px);
-    grid-template-rows: (400px,100px);
-    grid-template-areas: "part1 part1 part1 ima1"
-                         "part2 part2 part3 part3";
-                         
+        
     .part1{
-        grid-area: part1;
+        p{
+        font-size: $fonttamaño-sm;
+        }
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: "parr1 parr1 ima1"
+                             "parr2  parr2 ima1"
+                             "parr3 parr3 parr3"
+                             "parr4 parr4 parr4";
+        align-items: center;
+    }
+    .parr1{
+        grid-area: parr1;
     }
     .ima1{
         grid-area: ima1;
+        width: 400px;
+        margin: 5px;
     }
-    .part2{
-        grid-area: part2;
-        height: 100px;
+    .parr2{
+        grid-area: parr2;
     }
-    
-    .part3{
-        grid-area: part3;
-        height: 100px;
-        
+    .parr3{
+        grid-area: parr3;
     }
-    
-}
-.ima2{
-    height: 200px;
-    width: 400px;
-}
-.ima3{
-    height: 200px;
-    width: 260px;
-}
-.ima5{
-    height: 400px;
-    width: 35%;
+    .parr4{
+        grid-area: parr4;
+    }
+
 }
 .Dif{
+    
     text-align: center;
     font-size: 40px;
     color: $colorletras;
 }
-.diferencias{
-    color: $colorletras;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: (1fr);
-    grid-template-areas:"ima5 part4 part4";
-    .ima5{
-        grid-area: ima5;
-        width: 350px;
-        height: 350px;
+.intyext{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,auto);
+        grid-template-areas: "part2 part2 part3 part3"
+                             "ima2 ima6 ima3 ima4";
     }
-    .part4{
-        grid-area: part4;
+    .part2{
+        grid-area: part2;
     }
-}
+    .ima2{
+        grid-area: ima2;
+    }
+    .ima6{
+        grid-area: ima6;
+    }
+    .part3{
+        grid-area: part3;
+    }
+    .ima3{
+        grid-area: ima3;
+    }
+    .ima4{
+        grid-area: ima4;
+    }
+@media only screen and (max-width:575px){
+    .MainHidratante{
+        
+        .part1{
+            p{
+            font-size: $fonttamaño-sm;
+            }
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(4,auto);
+            grid-template-areas: "parr1 parr1 ima1"
+                                 "parr2  parr2 parr2"
+                                 "parr3 parr3 parr3"
+                                 "parr4 parr4 parr4";
+            align-items: center;
+        }
+        .parr1{
+            grid-area: parr1;
+        }
+        .ima1{
+            grid-area: ima1;
+            width: 150px;
+            margin: 5px;
+        }
+        .parr2{
+            grid-area: parr2;
+        }
+        .parr3{
+            grid-area: parr3;
+        }
+        .parr4{
+            grid-area: parr4;
+        }
+        .intyext{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(4,auto);
+            grid-template-areas: "part2 part2"
+                                 "ima2 ima6"
+                                 "part3 part3"
+                                 "ima3 ima4";
+        }
+        .part2{
+            grid-area: part2;
+        }
+        .ima2{
+            grid-area: ima2;
+        }
+        .ima6{
+            grid-area: ima6;
+        }
+        .part3{
+            grid-area: part3;
+        }
+        .ima3{
+            grid-area: ima3;
+        }
+        .ima4{
+            grid-area: ima4;
+        }
+    }
+    .diferencias{
+        
+        color: $colorletras;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:repeat(2,1fr);
+        grid-template-areas:"ima5 part4"
+                            "part5 part5";
+        align-items: center;
+        }                   
+        .ima5{
+            grid-area: ima5;
+           width: 200px;
+            
+        }
+        .part4{
+            grid-area: part4;
+            
+        }
+        .part5{
+            grid-area: part5;
+        }
+ }
+ @media only screen and (min-width:992px){
+    .MainHidratante{
+        
+        .part1{
+            p{
+            font-size: $fonttamaño-sm;
+            }
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(4,auto);
+            grid-template-areas: "parr1 parr1 ima1"
+                                 "parr2  parr2 ima1"
+                                 "parr3 parr3 parr3"
+                                 "parr4 parr4 parr4";
+            align-items: center;
+        }
+        .parr1{
+            grid-area: parr1;
+        }
+        .ima1{
+            grid-area: ima1;
+            width: 200px;
+            margin: 5px;
+        }
+        .parr2{
+            grid-area: parr2;
+        }
+        .parr3{
+            grid-area: parr3;
+        }
+        .parr4{
+            grid-area: parr4;
+        }
 
+    }
+    
+    .diferencias{
+        
+        color: $colorletras;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:repeat(2,auto);
+        grid-template-areas:"ima5 part4"
+                            "ima5 part5";
+        align-items: center;
+        }                   
+        .ima5{
+            grid-area: ima5;
+           width: 400px;
+            
+        }
+        .part4{
+            grid-area: part4;
+            
+        }
+        .part5{
+            grid-area: part5;
+        }
+ }
