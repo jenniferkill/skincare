@@ -605,6 +605,52 @@ img {
 li {
   color: #4E1A3D; }
 
+.baner {
+  width: 100%; }
+
+a {
+  text-decoration: none; }
+
+.productohidra {
+  margin: 20px; }
+  .productohidra a {
+    text-decoration: none; }
+  .productohidra img {
+    margin-left: 100px; }
+
+.productoacne {
+  background-color: #4E1A3D;
+  border-radius: 30px;
+  margin: 20px; }
+  .productoacne a {
+    text-decoration: none; }
+    .productoacne a h2 {
+      color: #FFDAB9; }
+  .productoacne img {
+    margin-left: 100px; }
+
+.productorosacea a {
+  text-decoration: none; }
+
+.productorosacea img {
+  margin-left: 100px; }
+
+@media only screen and (min-width: 576px) {
+  .productohidra img {
+    margin-left: 250px; }
+  .productoacne img {
+    margin-left: 250px; }
+  .productorosacea img {
+    margin-left: 250px; } }
+
+@media only screen and (min-width: 576px) {
+  .productohidra img {
+    margin-left: 350px; }
+  .productoacne img {
+    margin-left: 350px; }
+  .productorosacea img {
+    margin-left: 350px; } }
+
 .Contenido {
   display: flex;
   justify-content: space-between;

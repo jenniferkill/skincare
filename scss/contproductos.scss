@@ -1,0 +1,90 @@
+$fontestilo: 'Neucha';
+$fonttamaño-xs: 14px;
+$fonttamaño-sm: 16px;
+$fonttamaño-s: 18px;
+$fonttamaño-m:20px;
+$fonttamaño-l:30px;
+$fonttamaño-x:35px;
+$colorfond: #FFDAB9;
+$colorbody:#FFDAB9;
+$colorback:#4E1A3D;
+$colorletras: #4E1A3D;
+$colorletclara: #FFDAB9;
+$colorhover:#DA70D6;
+$tamañoimagen: 200px; 
+
+.baner{
+    width: 100%;
+    
+}
+a{
+    text-decoration: none;  
+}
+.productohidra{
+    margin: 20px;
+    a{
+        text-decoration: none;  
+    }
+    img{
+        margin-left: 100px;
+    }
+}
+.productoacne{
+    background-color: $colorback;
+    border-radius: 30px;
+    margin: 20px;
+    a{
+        text-decoration: none; 
+        h2{
+            color: $colorletclara;
+        } 
+    }
+    img{
+        margin-left: 100px;
+    }
+}.productorosacea{
+    a{
+        text-decoration: none;  
+    }
+    img{
+        margin-left: 100px;
+    }
+}
+@media only screen and (min-width:576px){
+    .productohidra{
+        
+        img{
+            margin-left: 250px;
+        }
+    }
+    .productoacne{
+        
+        img{
+            margin-left: 250px;
+        }
+    }.productorosacea{
+      
+        img{
+            margin-left: 250px;
+        }
+    }
+}
+@media only screen and (min-width:576px){
+    .productohidra{
+        
+        img{
+            margin-left: 350px;
+        }
+    }
+    .productoacne{
+        
+        img{
+            margin-left: 350px;
+        }
+    }.productorosacea{
+      
+        img{
+            margin-left: 350px;
+        }
+    }
+}
