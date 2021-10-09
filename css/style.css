@@ -643,13 +643,13 @@ a {
   .productorosacea img {
     margin-left: 250px; } }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 992px) {
   .productohidra img {
-    margin-left: 350px; }
+    margin-left: 450px; }
   .productoacne img {
-    margin-left: 350px; }
+    margin-left: 450px; }
   .productorosacea img {
-    margin-left: 350px; } }
+    margin-left: 450px; } }
 
 .Contenido {
   display: flex;
