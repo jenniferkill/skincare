@@ -17,19 +17,20 @@
 .imahombres{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
    
     
     .imahombre1{
         
         display: flex;
-        width: 150px;
+        width: 100px;
         
     }
     .imahombre2{
         
         display: flex;
-        width: 150px;
+        width: 100px;
         
     }
 
@@ -52,22 +53,26 @@
         }
     }
     .imahombres{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2, auto);
-        grid-template-areas: "text1 text1"
-                             "ima1 ima2";
-        justify-items: center;
-        .text{
-            grid-area: text1;
-        }
-        .imahombre1{
-            grid-area: ima1;
-            width: 250px;
-        }
-        .imahombre2{
-            grid-area: ima2;
-            width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+       
+        .imahom{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .imahombre1{
+                display: flex;
+                width: 300px;
+                
+            }
+            .imahombre2{
+                display: flex; 
+                width: 300px;
+            }
         }
     }
 }
