@@ -1,4 +1,30 @@
 
-li{
-    color: $colorletras;
+#principiosAcne{
+    button{
+        color:$colorletras;
+    }
+}    
+@media only screen and (min-width:574px){
+    .explicacion{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,auto); 
+        grid-template-areas: "text1 text1 ima1"
+                             "text2 text2 ima1"
+                             "text3 text3 ima1";
+        .textoAcne1{
+            grid-area: text1;
+        }
+        .textoAcne2{
+            grid-area: text2;
+        }
+        .textoAcne3{
+            grid-area: text3;
+        }
+        .carousel{
+            grid-area: ima1;
+            margin-top: 30px;
+        }
+    }
+
 }

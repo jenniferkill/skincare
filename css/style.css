@@ -30,43 +30,22 @@
       .Menu_externo .NavIma img {
         width: 70px; } }
 
-.menu {
-  display: flex;
-  justify-content: space-between;
-  background-color: #FFDAB9; }
-  .menu img {
-    width: 100%;
-    border: #250c2c solid 2px;
-    margin: 5px; }
-  .menu a {
-    width: 20%; }
-    .menu a :link :visited :active {
-      text-decoration: none;
-      color: #4E1A3D; }
-  .menu .navigation {
-    display: flex;
-    list-style: none;
-    font-family: "Neucha";
-    font-size: 20px;
-    text-align: center;
-    align-items: center; }
-    .menu .navigation :hover {
-      color: #DA70D6; }
-    .menu .navigation .navigationOptions {
-      float: right;
-      flex-direction: row;
-      width: 100px; }
-
 .navbar {
-  background-color: #FFDAB9; }
+  background-color: #4E1A3D; }
 
-#Navletra {
+#navletra {
+  color: #FFDAB9; }
+
+#navbarDropdown {
+  color: #FFDAB9; }
+
+#navletradrow {
   color: #4E1A3D; }
 
-#desplegable {
-  background-color: #FFDAB9; }
+.navbar-toggler {
+  background-color: aqua; }
 
-@media only screen and (max-width: 790px) {
+@media only screen and (min-width: 575px) {
   * {
     margin: 0px;
     padding: 0px;
@@ -94,149 +73,64 @@ p {
   color: #4E1A3D;
   font-size: 18px; }
 
-.MainHidratante .part1 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, auto);
-  grid-template-areas: "parr1 parr1 ima1" "parr2  parr2 ima1" "parr3 parr3 parr3" "parr4 parr4 parr4";
-  align-items: center; }
-  .MainHidratante .part1 p {
-    font-size: 16px; }
-
-.MainHidratante .parr1 {
-  grid-area: parr1; }
-
-.MainHidratante .ima1 {
-  grid-area: ima1;
-  width: 400px;
-  margin: 5px; }
-
-.MainHidratante .parr2 {
-  grid-area: parr2; }
-
-.MainHidratante .parr3 {
-  grid-area: parr3; }
-
-.MainHidratante .parr4 {
-  grid-area: parr4; }
+#factores {
+  color: #4E1A3D; }
+  #factores h5 {
+    text-align: center; }
 
 .Dif {
   text-align: center;
-  font-size: 40px;
   color: #4E1A3D; }
 
-.intyext {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, auto);
-  grid-template-areas: "part2 part2 part3 part3" "ima2 ima6 ima3 ima4"; }
+#humehid {
+  color: #4E1A3D; }
 
-.part2 {
-  grid-area: part2; }
+#productoshidra button {
+  color: #4E1A3D; }
 
-.ima2 {
-  grid-area: ima2; }
-
-.ima6 {
-  grid-area: ima6; }
-
-.part3 {
-  grid-area: part3; }
-
-.ima3 {
-  grid-area: ima3; }
-
-.ima4 {
-  grid-area: ima4; }
-
-@media only screen and (max-width: 575px) {
-  .MainHidratante .part1 {
+@media only screen and (min-width: 574px) {
+  .TextoPrincipal {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
     grid-template-areas: "parr1 parr1 ima1" "parr2  parr2 parr2" "parr3 parr3 parr3" "parr4 parr4 parr4";
     align-items: center; }
-    .MainHidratante .part1 p {
+    .TextoPrincipal p {
       font-size: 16px; }
-  .MainHidratante .parr1 {
-    grid-area: parr1; }
-  .MainHidratante .ima1 {
-    grid-area: ima1;
-    width: 150px;
-    margin: 5px; }
-  .MainHidratante .parr2 {
-    grid-area: parr2; }
-  .MainHidratante .parr3 {
-    grid-area: parr3; }
-  .MainHidratante .parr4 {
-    grid-area: parr4; }
-  .MainHidratante .intyext {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: "part2 part2" "ima2 ima6" "part3 part3" "ima3 ima4"; }
-  .MainHidratante .part2 {
-    grid-area: part2; }
-  .MainHidratante .ima2 {
-    grid-area: ima2; }
-  .MainHidratante .ima6 {
-    grid-area: ima6; }
-  .MainHidratante .part3 {
-    grid-area: part3; }
-  .MainHidratante .ima3 {
-    grid-area: ima3; }
-  .MainHidratante .ima4 {
-    grid-area: ima4; }
-  .diferencias {
-    color: #4E1A3D;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "ima5 part4" "part5 part5";
-    align-items: center; }
-  .ima5 {
-    grid-area: ima5;
-    width: 200px; }
-  .part4 {
-    grid-area: part4; }
-  .part5 {
-    grid-area: part5; } }
+    .TextoPrincipal .parr1 {
+      grid-area: parr1; }
+    .TextoPrincipal .ima1 {
+      grid-area: ima1;
+      width: 150px;
+      margin: 5px; }
+    .TextoPrincipal .parr2 {
+      grid-area: parr2; }
+    .TextoPrincipal .parr3 {
+      grid-area: parr3; }
+    .TextoPrincipal .parr4 {
+      grid-area: parr4; } }
 
 @media only screen and (min-width: 992px) {
-  .MainHidratante .part1 {
+  .TextoPrincipal {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
     grid-template-areas: "parr1 parr1 ima1" "parr2  parr2 ima1" "parr3 parr3 parr3" "parr4 parr4 parr4";
     align-items: center; }
-    .MainHidratante .part1 p {
+    .TextoPrincipal p {
       font-size: 16px; }
-  .MainHidratante .parr1 {
-    grid-area: parr1; }
-  .MainHidratante .ima1 {
-    grid-area: ima1;
-    width: 200px;
-    margin: 5px; }
-  .MainHidratante .parr2 {
-    grid-area: parr2; }
-  .MainHidratante .parr3 {
-    grid-area: parr3; }
-  .MainHidratante .parr4 {
-    grid-area: parr4; }
-  .diferencias {
-    color: #4E1A3D;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: "ima5 part4" "ima5 part5";
-    align-items: center; }
-  .ima5 {
-    grid-area: ima5;
-    width: 400px; }
-  .part4 {
-    grid-area: part4; }
-  .part5 {
-    grid-area: part5; } }
+    .TextoPrincipal .parr1 {
+      grid-area: parr1; }
+    .TextoPrincipal .ima1 {
+      grid-area: ima1;
+      width: 200px;
+      margin: 5px; }
+    .TextoPrincipal .parr2 {
+      grid-area: parr2; }
+    .TextoPrincipal .parr3 {
+      grid-area: parr3; }
+    .TextoPrincipal .parr4 {
+      grid-area: parr4; } }
 
 .Principal {
   width: 80%; }
@@ -252,9 +146,6 @@ h2 {
   text-align: center;
   padding: 10px;
   font-size: 30px; }
-
-#tipo_piel {
-  background-color: #FFDAB9; }
 
 @media only screen and (max-width: 575px) {
   .Principal {
@@ -597,36 +488,40 @@ h1 {
   .CbMain h3 {
     text-align: center; } }
 
+.contactoima {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1, auto;
+  grid-template-areas: "form carousel"; }
+
 .formContacto {
   width: 300px;
-  border: #944ed4 solid 2px;
+  border: #4E1A3D solid 2px;
   background-size: contain;
   padding: 50px;
-  margin: auto;
   border-radius: 30px;
   font-family: 'Neucha';
-  color: #4B0082;
+  color: #4E1A3D;
   font-weight: bold; }
   .formContacto .boton {
     width: 50%;
-    background-color: #944ed4;
+    background-color: #FFDAB9;
     border: none;
     padding: 5px;
     margin: 5px;
     border-radius: 5px; }
   .formContacto .titulo {
-    color: #4E1A3D;
-    background-color: wheat; }
+    color: #4E1A3D; }
   .formContacto .ingreso {
     width: 100%;
-    background-color: #944ed4;
+    background-color: #FFDAB9;
     padding: 5px;
     border-radius: 5px;
     margin-bottom: 20px;
     border: 1px solid white;
     font-family: 'Neucha'; }
 
-#accordionExample {
+#accordionColor {
   background-color: #FFDAB9; }
 
 .imahombre {
@@ -711,8 +606,24 @@ h1 {
 img {
   width: 200px; }
 
-li {
+#principiosAcne button {
   color: #4E1A3D; }
+
+@media only screen and (min-width: 574px) {
+  .explicacion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "text1 text1 ima1" "text2 text2 ima1" "text3 text3 ima1"; }
+    .explicacion .textoAcne1 {
+      grid-area: text1; }
+    .explicacion .textoAcne2 {
+      grid-area: text2; }
+    .explicacion .textoAcne3 {
+      grid-area: text3; }
+    .explicacion .carousel {
+      grid-area: ima1;
+      margin-top: 30px; } }
 
 .baner {
   width: 100%; }
@@ -762,8 +673,4 @@ a {
   display: flex;
   justify-content: space-between;
   margin: 10px;
-  font-family: "Neucha";
-  background-color: #FFDAB9; }
-
-.General {
-  background-color: #FFDAB9; }
+  font-family: "Neucha"; }

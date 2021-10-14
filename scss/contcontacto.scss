@@ -1,18 +1,21 @@
-
+.contactoima{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: (1,auto);
+    grid-template-areas: "form carousel";
+}
 .formContacto{
     width: 300px;
-    border: rgb(148, 78, 212) solid 2px;
-    
+    border:$colorback solid 2px;
     background-size: contain;
     padding: 50px;
-    margin: auto;
     border-radius: 30px;
     font-family: 'Neucha';
-    color: #4B0082;
+    color: $colorback;
     font-weight: bold;
     .boton{
         width: 50%;
-        background-color: rgb(148, 78, 212);
+        background-color: $colorfond;
         border: none;
         padding: 5px;
         margin: 5px;
@@ -20,11 +23,11 @@
     }
     .titulo{
         color: $colorletras;
-        background-color: wheat;
+        
     }
     .ingreso{
         width: 100%;
-        background-color: rgb(148, 78, 212);
+        background-color: $colorfond;
         padding: 5px;
         border-radius: 5px;
         margin-bottom: 20px;
