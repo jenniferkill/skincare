@@ -628,47 +628,98 @@ img {
 .baner {
   width: 100%; }
 
-a {
+h5 a {
   text-decoration: none; }
 
-.productohidra a {
-  text-decoration: none; }
+#productosGeneral {
+  display: flex;
+  flex-direction: row; }
 
-.productohidra img {
-  margin-left: 10%; }
+#producIma1 {
+  display: flex; }
 
-.productoacne {
-  background-color: #4E1A3D;
-  border-radius: 30px; }
-  .productoacne a {
-    text-decoration: none; }
-    .productoacne a h2 {
-      color: #FFDAB9; }
-    .productoacne a img {
-      margin-left: 10%; }
+#producIma2 {
+  display: flex;
+  background-color: #4E1A3D; }
+  #producIma2 h2 {
+    color: #FFDAB9; }
 
-.productorosacea a {
-  text-decoration: none; }
+#producIma3 {
+  display: flex; }
 
-.productorosacea img {
-  margin-left: 10%; }
-
-@media only screen and (min-width: 574px) {
-  .productohidra img {
-    margin-left: 20%; }
-  .productoacne img {
-    margin-left: 50%; }
-  .productorosacea img {
-    margin-left: 20%; } }
-
-@media only screen and (min-width: 992px) {
-  .productohidra img {
-    margin-left: 40%; }
-  .productoacne img {
-    margin-left: 40%; }
-  .productorosacea img {
-    margin-left: 40%; } }
-
+/*.productohidra{
+    
+    a{
+        text-decoration: none;  
+    }
+    img{
+        margin-left: 10%;
+    }
+    
+}
+.productoacne{
+    background-color: $colorback;
+    border-radius: 30px;
+    
+    a{
+        text-decoration: none; 
+        h2{
+            color: $colorletclara;
+        } 
+        img{
+            margin-left: 10%;
+        }
+    }
+    
+}.productorosacea{
+    a{
+        text-decoration: none;  
+    }
+    img{
+        margin-left: 10%;
+    }
+    
+}
+@media only screen and (min-width:574px){
+    .productohidra{
+        
+        img{
+            margin-left: 20%;
+        }
+    }
+    .productoacne{
+        
+        img{
+            margin-left: 50%;
+        }
+    }.productorosacea{
+      
+        img{
+            margin-left: 20%;
+        }
+    }
+}
+@media only screen and (min-width:992px){
+    .productohidra{
+        
+        img{
+            margin-left: 40%;
+            width: 200px;
+        }
+    }
+    .productoacne{
+        
+        img{
+            margin-left: 40%;
+            width: 200px;
+        }
+    }.productorosacea{
+      
+        img{
+            margin-left: 40%;
+            width: 200px;
+        }
+    }*/
 .Contenido {
   display: flex;
   justify-content: space-between;

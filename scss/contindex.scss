@@ -1,5 +1,3 @@
-
-
 .Principal{
     width: 80%;
     p{
@@ -12,15 +10,11 @@
         color: $colorletras;
     }
 }
-
-
-
 h2{
     text-align: center;
     padding: 10px;
     font-size: $fonttamaño-l;
 }
-
 @media only screen and (max-width:575px){
     .Principal{
         width: 80%;

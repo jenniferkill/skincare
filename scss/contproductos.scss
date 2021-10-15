@@ -1,26 +1,32 @@
-$fontestilo: 'Neucha';
-$fonttamaño-xs: 14px;
-$fonttamaño-sm: 16px;
-$fonttamaño-s: 18px;
-$fonttamaño-m:20px;
-$fonttamaño-l:30px;
-$fonttamaño-x:35px;
-$colorfond: #FFDAB9;
-$colorbody:#FFDAB9;
-$colorback:#4E1A3D;
-$colorletras: #4E1A3D;
-$colorletclara: #FFDAB9;
-$colorhover:#DA70D6;
-$tamañoimagen: 200px; 
 
 .baner{
     width: 100%;
     
 }
-a{
+h5{
+    a{
     text-decoration: none;  
+    }
 }
-.productohidra{
+
+#productosGeneral{
+    display: flex;
+    flex-direction: row;
+}
+#producIma1{
+    display: flex;
+}
+#producIma2{
+    display: flex;
+    background-color: $colorback;
+    h2{
+        color: $colorletclara;
+    }
+}
+#producIma3{
+    display: flex;
+}
+/*.productohidra{
     
     a{
         text-decoration: none;  
@@ -77,17 +83,20 @@ a{
         
         img{
             margin-left: 40%;
+            width: 200px;
         }
     }
     .productoacne{
         
         img{
             margin-left: 40%;
+            width: 200px;
         }
     }.productorosacea{
       
         img{
             margin-left: 40%;
+            width: 200px;
         }
-    }
-}
+    }*/
+
